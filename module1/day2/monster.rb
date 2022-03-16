@@ -36,6 +36,9 @@ class Monster
     if effect == "burnt"
       @counter += 3
       @save_damage = save_damage
+    elsif effect == "stunned"
+      @counter += 2
+      @save_damage = save_damage
     elsif effect == "frozen"
       @counter += 1
     end
@@ -44,7 +47,7 @@ class Monster
   def new_turn
     if @debuff != "" && @counter > 0
       @counter -= 1
-      if @debuff == "burnt"
+      if @debuff == "burnt" || @debuff == "stunned"
         @hitpoint -= @save_damage
       end
     elsif @counter == 0

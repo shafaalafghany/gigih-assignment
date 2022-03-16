@@ -3,6 +3,8 @@ class FireMonster < Monster
     if @debuff == "frozen"
       puts "#{@name} is in frozen state, can't attack"
       return
+    elsif @debuff == "stunned"
+      puts "#{@name} is in stunned state, can't attack"
     end
     
     monster.take_effect("burnt", 0.4 * @attack_point.to_f)

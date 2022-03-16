@@ -1,9 +1,10 @@
 require_relative 'monster'
 require_relative 'fire_monster'
 require_relative 'ice_monster'
+require_relative 'lightning_monster'
 require_relative 'player'
 
-phpkachu = Monster.new('Phpkachu', 120, 50)
+phpkachu = LightningMonster.new('Phpkachu', 120, 50)
 sqlrtle = IceMonster.new('Sqlrtle', 180, 20)
 cppmander = FireMonster.new('Cppmander', 100, 80)
 bashtoise = IceMonster.new('Bashtoise', 120, 60)

@@ -3,6 +3,8 @@ class IceMonster < Monster
     if @debuff == "frozen"
       puts "#{@name} is in frozen state, can't attack"
       return
+    elsif @debuff == "stunned"
+      puts "#{@name} is in stunned state, can't attack"
     end
     
     monster.take_effect("frozen", 0)
