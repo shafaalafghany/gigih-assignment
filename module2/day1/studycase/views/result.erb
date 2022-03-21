@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <h2>Checkout</h2>
+    <div>
+      Hello Customer, 
+      Name: <%= data[:name] %>
+      <br />
+      Address: <%= data[:address] %>
+      <br />
+      Orders:
+      <br />
+      <%= data[:food] %> x <%= data[:food_quantity] %><br />
+      <%= data[:drink] %> x <%= data[:drink_quantity] %><br /><br />
+      Total: <%= data[:total_price] %>  $
+      <br/>
+      <i>Thank you for ordering our food!</i>
+    </div>
+  </body>
+</html>
