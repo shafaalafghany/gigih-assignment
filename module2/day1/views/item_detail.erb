@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    table {
+      background-color: cyan;
+      border: 1px outset white;
+      border-collapse: collapse;
+    }
+    th, td {
+      width: 100px;
+      height: 50px;
+    }
+    td {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th>Item Name</th>
+      <td><%= data[:name] %></td>
+    </tr>
+    <tr>
+      <th>Category</th>
+      <td><%= data[:category] %></td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td>Rp <%= data[:price] %></td>
+    </tr>
+  </table>
+</body>
+</html>
